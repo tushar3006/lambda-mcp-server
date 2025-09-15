@@ -23,8 +23,6 @@ from mcp.server.fastmcp import Context, FastMCP
 from typing import Optional
 
 
-# Load environment variables from .env file
-load_dotenv()
 
 # Set up logging
 logging.basicConfig(level=logging.INFO)
