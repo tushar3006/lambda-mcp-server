@@ -71,7 +71,7 @@ if AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY:
         aws_session_token=AWS_SESSION_TOKEN,
         region_name=AWS_REGION
     )
-else if:
+elif:
     session = boto3.Session(profile_name=AWS_PROFILE, region_name=AWS_REGION)    
 else:
     logger.info(f'Using AWS profile---------------: {AWS_PROFILE}')
