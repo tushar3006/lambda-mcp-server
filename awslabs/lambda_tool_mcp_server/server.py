@@ -28,10 +28,10 @@ from typing import Optional
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-AWS_PROFILE = os.environ.get('AWS_PROFILE', 'root')
+AWS_PROFILE = os.environ.get('AWS_PROFILE')
 logger.info(f'AWS_PROFILE: {AWS_PROFILE}')
 
-AWS_REGION = os.environ.get('AWS_REGION', 'us-west-1')
+AWS_REGION = os.environ.get('AWS_REGION')
 logger.info(f'AWS_REGION: {AWS_REGION}')
 
 AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
