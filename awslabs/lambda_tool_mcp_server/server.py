@@ -73,10 +73,10 @@ elif AWS_PROFILE and AWS_REGION:
     logger.info(f'Using AWS profile: {AWS_PROFILE}')
     session = boto3.Session(profile_name=AWS_PROFILE, region_name=AWS_REGION)
 else:
-    logger.info(f'Using AWS profile---------------: {AWS_PROFILE}')
     session = boto3.Session()
 
 
+logger.info(f'Using AWS profile---------------: {AWS_PROFILE}, {session}')
 
 
 lambda_client = session.client('lambda')
